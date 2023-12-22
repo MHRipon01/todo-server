@@ -71,9 +71,9 @@ app.get('/users' ,async(req,res) =>  {
       return res.send({ message: "user already exists", insertedId: null });
     }
     const result = await userCollection.insertOne(user);
-    res.send(result);
+    res.send(result);  
   });
-  
+  //checking
   //adding task on the collection
   app.post('/addTodo', async(req,res) =>{
     const task = req.body;
